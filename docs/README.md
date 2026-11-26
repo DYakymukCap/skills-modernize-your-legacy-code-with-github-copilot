@@ -31,6 +31,22 @@ Stores the account balance and provides the read/write interface used by `Operat
 - The code does not define student-specific fees, cafeteria accounts, or school-supply purchase rules.
 - The balance is initialized when the program starts and is not persisted between runs.
 
+## Node.js application
+
+The modernized command-line application is in `src/accounting/index.js`. It uses Node.js built-in modules, so no additional package installation is required.
+
+Run it from the repository root with:
+
+```sh
+node src/accounting/index.js
+```
+
+Run its unit tests with:
+
+```sh
+node --test src/accounting/index.test.js
+```
+
 ## Application data flow
 
 ```mermaid
